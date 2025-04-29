@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>SporTNews - Futebol</title>
+    <style>
+        /* Estilos gerais */
+        body {
+            margin: 0;
+            font-family: 'Poppins', 'Arial', sans-serif;
+            background-color: #0B132B;
+            color: #111f49;
+            font-size: 18px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #101a37;
+            padding: 25px 0;
+            text-align: center;
+            border-bottom: 4px solid #ffffff;
+        }
+
+        /* Logo */
+        .logo {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 48px;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin: 0;
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #111f49;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #3A86FF;
+        }
+
+        /* Linha abaixo da navegação */
+        .linha-abaixo {
+            height: 5px;
+            background-color: #ffbf00;
+            width: 100%;
+        }
+
+        /* Conteúdo principal */
+        main {
+            padding: 40px 20px;
+            background-color: #1a2c64;
+            color: #333;
+        }
+
+        /* Título da seção */
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Linha abaixo do título */
+        .linha-titulo {
+            height: 5px;
+            background-color: #ffbf00;
+            width: 100%;
+            margin: 0 auto 30px auto;
+            border-radius: 5px;
+        }
+
+        /* Grid de notícias */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Item individual de notícia */
+        .news-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-content h3 {
+            color: #1A1A1D;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .news-content p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            color: #3A86FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #111f49;
+            color: #F0EAD6;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1 class="logo">SporTNews</h1>
+    </header>
+
+    <!-- Navegação -->
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Notícias</a>
+        <a href="#">Times</a>
+        <a href="#">Jogos</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Linha abaixo do menu -->
+    <div class="linha-abaixo"></div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Título principal -->
+        <h2 class="section-title">Últimas Notícias de Futebol</h2>
+
+        <!-- Linha abaixo do título -->
+        <div class="linha-titulo"></div>
+
+        <!-- Área de notícias -->
+        <div class="news-grid">
+            
+            <!-- Notícia 1 -->
+            <div class="news-item">
+                <img src="https://i.imgur.com/D9UMfTv.png" alt="Carlo Ancelotti" class="news-image">
+                <div class="news-content">
+                    <h3>Carlo Ancelotti tem acordo verbal com a seleção!</h3>
+                    <p>O renomado técnico Carlo Ancelotti acaba de assinar um acordo verbal com a Confederação Brasileira de Futebol (CBF).
+                        Ancelotti assumirá a Seleção Brasileira antes do início do Mundial de Clubes, com um contrato no valor de 5 milhões de reais.
+                    </p>
+                    <a href="https://www.instagram.com/p/DJAI398IkLc/" target="_blank" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+            <!-- Notícia 2 -->
+            <div class="news-item">
+                <img src="https://i.imgur.com/NcycJV0.png" alt="Lesão Neymar" class="news-image">
+                <div class="news-content">
+                    <h3>LESÃO GRAVE!</h3>
+                    <p>Em jogo válido pelo Brasileirão, o craque brasileiro Neymar JR deixa o campo aos 35 minutos do primeiro tempo, chorando e com dores.
+                    </p>
+                    <a href="https://www.instagram.com/p/DIh2I01IWDI/" target="_blank" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+            <!-- Notícia 3 -->
+            <div class="news-item">
+                <img src="https://i.imgur.com/tLGCak3.png" alt="Novo uniforme" class="news-image">
+                <div class="news-content">
+                    <h3>Mudança Pesada!</h3>
+                    <p>Foi confirmado que em 2026 o segundo uniforme da seleção brasileira será da cor vermelha! Não seria a primeira vez que isso aconteceria.
+                    </p>
+                    <a href="https://www.instagram.com/p/DJALtJQOnEC/" class="read-more">Leia mais</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        © 2025 SporTNews - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
